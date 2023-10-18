@@ -20,11 +20,11 @@ const Team = () => {
                         </div>
                     </div>
                     <div className="flex flex-wrap justify-center m-10 p-3 -mx-4">
-                        <TeamCard
+                        {/* <TeamCard
                             name="Sarvesh Damle"
                             profession="Web Developer"
                             imageSrc="https://res.cloudinary.com/dmrz8k1os/image/upload/v1696440501/samples/ecommerce/Sarvesh_Damle_Photo-removebg-preview_qrgcme.png"
-                        />
+                        /> */}
                         <div className="flex flex-col justify-center items-center w-full px-4 sm:w-1/2 lg:w-3/12 mb-32">
                             <div className="flex flex-col justify-center items-center w-full mb-10 ml-3">
                                 <h4 className="text-lg font-semibold mb-9 text-dark">
