@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { GamestateContext } from "./Quiz_Helpers/Contexts";
 import useAxios from "../../hooks/useAxios";
-import { Loader, Placeholder, Message } from "rsuite";
+import { Message } from "rsuite";
 import { useDispatch } from "react-redux";
 import {
   handleAmountChange,
@@ -9,6 +9,7 @@ import {
   handleDifficultyChange,
   handleTypeChange,
 } from "../../redux/actions";
+import LoaderComp from "./loader";
 // import { useNavigate } from "react-router-dom";
 
 const Options = (props) => {
@@ -55,8 +56,9 @@ const Menu = () => {
   if (loading) {
     return (
       <div>
-        <Placeholder.Paragraph rows={8} />
-        <Loader center content="loading" />
+        {/* <Placeholder.Paragraph rows={8} /> */}
+        {/* <Loader center content="loading" /> */}
+        <LoaderComp></LoaderComp>
       </div>
     );
   }

@@ -12,10 +12,10 @@ const Footer = () => {
                   <img
                     src="https://res.cloudinary.com/dmrz8k1os/image/upload/v1697573307/quiz_app/Quizzie-logos_transparent_dq03tg.png"
                     alt="logo"
-                    className="max-w-full"
+                    className="max-w-full m-2"
                   />
                 </a>
-                <p className="text-base mb-7 text-body-color">
+                <p className="text-base mb-7 text-body-color ml-3">
                   A Quiz Platform to Test your Knowledge across domains and Check your Scores and Ranks in the Leaderboard.
                 </p>
               </div>
@@ -30,7 +30,7 @@ const Footer = () => {
                 <h4 className="text-lg font-semibold mb-9 text-dark">
                   Follow us On
                 </h4>
-                <div className="flex items-center mb-6">
+                <div className="flex items-center mb-6 ml-2">
                   <a
                     href="https://www.facebook.com"
                     className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] text-dark hover:border-primary hover:bg-primary hover:text-blue-500 sm:mr-4 lg:mr-3 xl:mr-4"
@@ -84,7 +84,7 @@ const Footer = () => {
                     </svg>
                   </a>
                 </div>
-                <p className="text-base text-body-color">
+                <p className="text-base text-body-color m-2">
                   {" "}
                   © {new Date().getFullYear()} Quizzie{" "}
                 </p>

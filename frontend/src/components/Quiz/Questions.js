@@ -3,8 +3,9 @@ import { GamestateContext } from "./Quiz_Helpers/Contexts";
 import { ResponseContext } from "./Quiz_Helpers/Contexts";
 import useAxios from "../../hooks/useAxios";
 import { useSelector } from "react-redux";
-import { Loader, Placeholder } from "rsuite";
+// import { Loader, Placeholder } from "rsuite";
 import {decode} from 'html-entities';
+import LoaderComp from "./loader";
 
 const getRandomInt = (max) => {
   return Math.floor(Math.random() * Math.floor(max));
@@ -53,8 +54,9 @@ function Questions() {
   if (loading) {
     return (
       <div>
-        <Placeholder.Paragraph rows={8} />
-        <Loader center content="loading" />
+        {/* <Placeholder.Paragraph rows={8} />
+        <Loader center content="loading" /> */}
+        <LoaderComp></LoaderComp>
       </div>
     );
   }
